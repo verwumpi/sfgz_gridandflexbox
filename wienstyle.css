@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Caacupe+One&family=Dosis:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap');
+
+h1{
+    font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10vw;
+  display: flex;
+  gap: 0.4em;
+  margin: 0;
+  padding: 0;
+  align-items: flex-start;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hover-zone {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-zone:hover {
+    padding-bottom: 100px;
+    margin-bottom: -100px; 
+}
+.hover-zone::before {
+    content: attr(data-text); /* holt den Text aus dem HTML */
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: red;
+    opacity: 0;               /* unsichtbar, solange kein Hover */
+    transition: opacity 0.1s ease, transform 0.4s ease;
+    /*pointer-events: none;
+    transform: scale(0.8);*/
+}
+
+.hover-zone:hover::before {
+    opacity: 1;
+    transform: scale(1);
+}
+.hover-wort {
+    display: inline-block; 
+    position: relative;
+    z-index: 1;
+    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.hover-zone:hover .hover-wort {
+    transform: translateY(-100px);
+}
+
+
