@@ -1,0 +1,51 @@
+
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tschau {
+        animation-name: tschaui;
+        animation-duration: 3s;
+
+        animation-iteration-count: 1;
+        /* animation-delay: 2s; */
+
+        font-size: 3rem;
+        font-weight: 100;
+        animation-fill-mode: forwards;
+}
+.hoi {
+        animation-name: hoii;
+        animation-duration: 4s;
+        animation-delay: 1s;
+
+        font-size: 3rem;
+        font-weight: 100;
+        animation-fill-mode: both;
+}
+
+@keyframes tschaui{
+    0%{     transform: translate(-100vw,0);}
+    20%{    transform: translate(0,0);}
+    30%{    transform: rotate(0deg);}
+    40%{    transform: rotate(90deg);}
+    70%{    transform: translate(0,0);}
+    100%{   transform: translate(100vw,0);}
+}
+
+@keyframes hoii{
+0% {transform: translate(100vw,0);}
+20% { transform: translate(0,0);}
+50% {transform: scale(150%);}
+100% { }
+
+
+}
