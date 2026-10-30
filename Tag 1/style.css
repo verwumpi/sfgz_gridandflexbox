@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Caacupe+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1{
+    color: rgb(224, 110, 61);
+    padding: 30px;
+    margin: 20px;
+    font-size: 4rem;
+    font-family: "Caacupe One", sans-serif;
+
+    
+    
+}
+div{
+    background-color: rgb(234, 220, 115);
+    border: 5px solid #000000;
+    padding: 20px;
+    margin: 30px;
+    max-width: 250px;
+    font-size: 1.25rem;
+
+
+
+}
+.wichtig {
+background: #8ee547;
+border: 5px dashed #ef9825;
+
+}
+
+#chef-notiz {
+background: #6884d3;
+color: white;
+transform: rotate(-4deg);
+padding: 30px;
+}
+
+body {
+  cursor: url("images/Horn.png") 8 8, auto;
+}
